@@ -9,3 +9,6 @@ class Organization(models.Model):
     description = models.CharField(max_length=400, null=True, blank=True)
     address = models.CharField(max_length=400)
     postcode = models.CharField(max_length=6)
+
+    def __str__(self):
+        return self.title
